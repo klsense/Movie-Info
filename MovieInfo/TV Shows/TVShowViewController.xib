@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="5056" systemVersion="13D65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TVShowViewController">
+            <connections>
+                <outlet property="leftButton" destination="qhl-fm-p5X" id="53g-LR-D4r"/>
+                <outlet property="leftButton2" destination="pTI-AD-G1E" id="aPh-nB-tU0"/>
+                <outlet property="leftButton3" destination="Q9a-c2-4P1" id="f9O-sO-x9K"/>
+                <outlet property="leftButton4" destination="H2d-GT-u0W" id="YQ2-47-58Z"/>
+                <outlet property="tabController" destination="mwy-Ka-Xxc" id="UEo-h8-pHd"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+        </view>
+        <tabBarController definesPresentationContext="YES" id="mwy-Ka-Xxc">
+            <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>
+            <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" barStyle="black" prompted="NO"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+            <tabBar key="tabBar" contentMode="scaleToFill" barStyle="black" selectedItem="z14-Za-QTV" id="pzL-BE-bOb">
+                <rect key="frame" x="0.0" y="519" width="320" height="49"/>
+                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            </tabBar>
+            <viewControllers>
+                <navigationController definesPresentationContext="YES" id="qEO-2b-9fM">
+                    <tabBarItem key="tabBarItem" title="On Air" image="nowplaying.png" id="jVH-4U-b3f"/>
+                    <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
+                    <nil key="simulatedDestinationMetrics"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Gpb-pE-wZO">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <viewControllers>
+                        <viewController id="wc3-BE-yN7" customClass="TVOnAirViewController">
+                            <navigationItem key="navigationItem" title="Root View Controller" id="XCQ-Lr-mQ2">
+                                <barButtonItem key="leftBarButtonItem" style="plain" id="153-ky-HeY">
+                                    <button key="customView" opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="qhl-fm-p5X">
+                                        <rect key="frame" x="16" y="7" width="33" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" image="menu-icon.png">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="btnMovePanelRight:" destination="-1" eventType="touchUpInside" id="JLp-br-Vyz"/>
+                                        </connections>
+                                    </button>
+                                </barButtonItem>
+                            </navigationItem>
+                            <nil key="simulatedStatusBarMetrics"/>
+                            <nil key="simulatedTopBarMetrics"/>
+                            <nil key="simulatedBottomBarMetrics"/>
+                            <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
+                            <nil key="simulatedDestinationMetrics"/>
+                        </viewController>
+                    </viewControllers>
+                </navigationController>
+                <navigationController definesPresentationContext="YES" id="oZ8-Vr-GkO">
+                    <tabBarItem key="tabBarItem" title="Airs Today" image="upcoming.png" id="Bne-zS-UsN"/>
+                    <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
+                    <nil key="simulatedDestinationMetrics"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="zqw-mT-wII">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <viewControllers>
+                        <viewController id="8wq-UJ-xkF" customClass="TVAirTodayViewController">
+                            <navigationItem key="navigationItem" title="Root View Controller" id="Odc-wG-jZM">
+                                <barButtonItem key="leftBarButtonItem" style="plain" id="ar7-op-wFe">
+                                    <button key="customView" opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="pTI-AD-G1E">
+                                        <rect key="frame" x="16" y="7" width="33" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" image="menu-icon.png">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="btnMovePanelRight:" destination="-1" eventType="touchUpInside" id="6su-Dd-GOe"/>
+                                        </connections>
+                                    </button>
+                                </barButtonItem>
+                            </navigationItem>
+                            <nil key="simulatedStatusBarMetrics"/>
+                            <nil key="simulatedTopBarMetrics"/>
+                            <nil key="simulatedBottomBarMetrics"/>
+                            <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
+                            <nil key="simulatedDestinationMetrics"/>
+                        </viewController>
+                    </viewControllers>
+                </navigationController>
+                <navigationController definesPresentationContext="YES" id="5ak-QV-knJ">
+                    <tabBarItem key="tabBarItem" title="Popular" image="popular.png" id="pT0-FT-eq1"/>
+                    <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
+                    <nil key="simulatedDestinationMetrics"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="KJo-1h-UlH">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <viewControllers>
+                        <viewController id="Tkp-0H-9xF" customClass="TVPopularViewController">
+                            <navigationItem key="navigationItem" title="Root View Controller" id="poN-6n-b6i">
+                                <barButtonItem key="leftBarButtonItem" style="plain" id="F6y-4q-gv5">
+                                    <button key="customView" opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Q9a-c2-4P1">
+                                        <rect key="frame" x="16" y="7" width="33" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" image="menu-icon.png">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="btnMovePanelRight:" destination="-1" eventType="touchUpInside" id="dYt-X4-9aT"/>
+                                        </connections>
+                                    </button>
+                                </barButtonItem>
+                            </navigationItem>
+                            <nil key="simulatedStatusBarMetrics"/>
+                            <nil key="simulatedTopBarMetrics"/>
+                            <nil key="simulatedBottomBarMetrics"/>
+                            <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
+                            <nil key="simulatedDestinationMetrics"/>
+                        </viewController>
+                    </viewControllers>
+                </navigationController>
+                <navigationController definesPresentationContext="YES" id="ZBR-4Z-DGW">
+                    <tabBarItem key="tabBarItem" title="Search" image="search2.png" id="z14-Za-QTV"/>
+                    <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="J51-Rc-fde">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <viewControllers>
+                        <viewController id="ErQ-N8-1FB" customClass="SearchMoviesViewController">
+                            <navigationItem key="navigationItem" title="Root View Controller" id="eoE-ky-26U">
+                                <barButtonItem key="leftBarButtonItem" style="plain" id="uBY-5X-erj">
+                                    <button key="customView" opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="H2d-GT-u0W">
+                                        <rect key="frame" x="16" y="7" width="33" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" image="menu-icon.png">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="btnMovePanelRight:" destination="-1" eventType="touchUpInside" id="Wz1-TV-qrS"/>
+                                        </connections>
+                                    </button>
+                                </barButtonItem>
+                            </navigationItem>
+                            <nil key="simulatedStatusBarMetrics"/>
+                            <nil key="simulatedTopBarMetrics"/>
+                            <nil key="simulatedBottomBarMetrics"/>
+                            <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
+                            <nil key="simulatedDestinationMetrics"/>
+                        </viewController>
+                    </viewControllers>
+                </navigationController>
+            </viewControllers>
+        </tabBarController>
+    </objects>
+    <resources>
+        <image name="menu-icon.png" width="33" height="30"/>
+        <image name="nowplaying.png" width="24" height="24"/>
+        <image name="popular.png" width="24" height="24"/>
+        <image name="search2.png" width="24" height="24"/>
+        <image name="upcoming.png" width="24" height="24"/>
+    </resources>
+</document>
